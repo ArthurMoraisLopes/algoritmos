@@ -191,6 +191,7 @@ void QuickSort(int vetormagico[], int beg, int end)
 
 void main()
 {
+
     srand(time(NULL));
     clock_t comeco;
     clock_t termino;
@@ -203,9 +204,11 @@ void main()
     int k, contadoritera;
 
 
-
     printf ("Qual o tamanho do seu vetor ? ");
-TAMANHO:
+    
+
+ TAMANHO:
+    
     scanf ("%d", &tamanho);
     if(tamanho<1)
     {
@@ -217,7 +220,10 @@ TAMANHO:
 
 
     printf ("Quantas interações cada algoritmo de ordenação tem que ter ? ");
+    
+    
 ITERACAO:
+
     scanf ("%d", &iteraor);
     if(iteraor<1)
     {
@@ -229,7 +235,10 @@ ITERACAO:
 
 
     printf ("Qual o tamanho máximo de cada elemento do vetor?:");
+    
+    
 ELEMENTOMAX:
+
     scanf ("%d", &elementomax);
     if(elementomax<1)
     {
