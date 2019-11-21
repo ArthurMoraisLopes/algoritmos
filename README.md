@@ -1,15 +1,28 @@
-# algoritmos
+# algoritmos ordenação
+
+
 
 #include <stdlib.h>
+
 #include <locale.h>
+
+
 #include <conio.h>
+
+
 #include <time.h>
+
+
 #include <math.h>
 
 
 
+
+
 void copia ( int vetormagico [], int vetormalabarista [], int tamanho)
+
 {
+
     for (int conttransferencia = 0; conttransferencia<tamanho; conttransferencia++)
     {
         vetormalabarista [conttransferencia] = vetormagico [conttransferencia];
@@ -21,6 +34,7 @@ void copia ( int vetormagico [], int vetormalabarista [], int tamanho)
 
 void tempomedio(double tempos[], double med, int iteraor, char tipo[])
 {
+
     int con;
 
     printf("\nTempo médio gasto para o ordenador %s: ", tipo);
@@ -38,6 +52,7 @@ void tempomedio(double tempos[], double med, int iteraor, char tipo[])
 
 void BubbleSort(int vetormagico[], int tamanho)
 {
+
     int i, j, temporario;
     for (i=0; i<tamanho-1; i++)
     {
@@ -60,6 +75,7 @@ void BubbleSort(int vetormagico[], int tamanho)
 
 void InsertionSort(int vetormagico[], int tamanho)
 {
+
     int i, j, temporario;
     for (i=1; i<tamanho; i++)
     {
@@ -79,6 +95,7 @@ void InsertionSort(int vetormagico[], int tamanho)
 
 int SMALLEST (int vetormagico[], int tamanho, int movimento)
 {
+
     int elemento = vetormagico[movimento], i;
     for (i=(movimento+1); i<tamanho; i++)
     {
@@ -94,6 +111,7 @@ int SMALLEST (int vetormagico[], int tamanho, int movimento)
 
 void SelectionSort(int vetormagico[], int tamanho)
 {
+
     int movimento, posicao, temporario;
     for (movimento=0; movimento<tamanho; movimento++)
     {
@@ -109,6 +127,7 @@ void SelectionSort(int vetormagico[], int tamanho)
 
 void MergeFazTudo (int vetormagico [], int beg, int meio, int end, int tamanho)
 {
+
     int i = beg, j = meio+1, index = beg, temp[tamanho], k;
     while ((i<=meio)&& (j<=end))
     {
@@ -134,6 +153,7 @@ void MergeFazTudo (int vetormagico [], int beg, int meio, int end, int tamanho)
 
 void MergeSort(int vetormagico [], int beg, int end, int tamanho)
 {
+
     int meio;
     if (beg<end)
     {
@@ -150,6 +170,7 @@ void MergeSort(int vetormagico [], int beg, int end, int tamanho)
 
 int PARTITION (int vetormagico [], int beg, int end)
 {
+
     int esquerda = beg;
     int direita = end;
     int posicaorepartevetor = beg;
@@ -176,6 +197,7 @@ int PARTITION (int vetormagico [], int beg, int end)
 
 void QuickSort(int vetormagico[], int beg, int end)
 {
+
     int posicaorepartevetor;
     if (beg<end)
     {
