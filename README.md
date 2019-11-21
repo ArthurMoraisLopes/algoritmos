@@ -203,3 +203,5 @@ Média
 0.0978
 0.0178
 
+
+Segue em anexo o template do trabalho, tendo assim a plotagem do gráfico no Excell e algoritmos na notação BigOnotation
