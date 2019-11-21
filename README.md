@@ -6,12 +6,9 @@
 
 #include <locale.h>
 
-
 #include <conio.h>
 
-
 #include <time.h>
-
 
 #include <math.h>
 
