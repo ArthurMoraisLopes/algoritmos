@@ -3,13 +3,9 @@
 
 
 #include <stdlib.h>
-
 #include <locale.h>
-
 #include <conio.h>
-
 #include <time.h>
-
 #include <math.h>
 
 
@@ -29,6 +25,8 @@ void copia ( int vetormagico [], int vetormalabarista [], int tamanho)
 
 
 
+
+
 void tempomedio(double tempos[], double med, int iteraor, char tipo[])
 {
 
@@ -42,6 +40,8 @@ void tempomedio(double tempos[], double med, int iteraor, char tipo[])
     }
     printf("%lf\n", med/iteraor);
 }
+
+
 
 
 
@@ -90,6 +90,8 @@ void InsertionSort(int vetormagico[], int tamanho)
 
 
 
+
+
 int SMALLEST (int vetormagico[], int tamanho, int movimento)
 {
 
@@ -118,6 +120,8 @@ void SelectionSort(int vetormagico[], int tamanho)
         vetormagico [posicao] = temporario;
     }
 }
+
+
 
 
 
@@ -160,6 +164,8 @@ void MergeSort(int vetormagico [], int beg, int end, int tamanho)
         MergeFazTudo (vetormagico, beg, meio, end, tamanho);
     }
 }
+
+
 
 
 
